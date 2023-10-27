@@ -1,0 +1,35 @@
+import java.util.*;
+class Agecategory
+{
+	public static void main(String arg[])
+{
+	int age;
+	Scanner s=new Scanner(System.in);
+	System.out.println("Enter age: ");
+	age=s.nextInt();
+	if(age>=0 && age<=8)
+	{
+	System.out.println("Kids");
+	}
+	else if(age>=9 && age<=18)
+	{
+	System.out.println("Teenage");
+	}
+	else if(age>=9 && age<=18)
+	{
+	System.out.println("Teenage");
+	}
+	else if(age>=19 && age<=39)
+	{
+	System.out.println("Adults");
+	}
+	else if(age>=40 && age<=59)
+	{
+	System.out.println("Elders");
+	}
+	else if(age>=60 && age<=80)
+	{
+	System.out.println("Senior Citizens");
+	}
+}
+}
