@@ -1,0 +1,21 @@
+import java.util.*;
+class Vowelcheck
+ {
+    public static void main(String arg[])
+	{
+	char c;
+	int count=0;
+	Scanner s=new Scanner(System.in);
+	System.out.println("Enter string: ");
+	String str=s.nextLine();
+	for(int i=0;i<str.length();i++)
+	{
+	c=str.charAt(i);
+	if(c=='a'||c=='e'||c=='i'||c=='o'||c=='u')
+	{
+	count++;
+	}
+}
+	System.out.println(count);
+    }
+}
