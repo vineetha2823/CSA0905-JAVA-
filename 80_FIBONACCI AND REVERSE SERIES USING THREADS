@@ -1,0 +1,41 @@
+import java.util.*;
+class Fibothread extends Thread
+{
+public void run()
+{
+setPriority(Thread.MAX_PRIORITY);
+System.out.println("Fibonacci Series: ");
+int n,nt,t1=0,t2=1;
+Scanner s=new Scanner(System.in);
+System.out.println("Enter no.of terms: ");
+n=s.nextInt();
+System.out.println(+t1);
+System.out.println(+t2);
+for(int i=2;i<n;i++)
+{
+nt=t1+t2;
+System.out.println(+nt);
+t1=t2;
+t2=nt;
+}
+}
+}
+class Model25 extends Thread
+{
+public void run()
+{
+setPriority(Thread.MIN_PRIORITY);
+System.out.println("Reverse series: ");
+for(int i=10;i>=0;i--)
+{
+System.out.println(+i);
+}
+}
+public static void main(String args[])
+{
+Fibothread a=new Fibothread();
+Model25 b=new Model25();
+a.start();
+b.start();
+}
+}
