@@ -1,0 +1,20 @@
+import java.util.*;
+class Eq3
+{
+public static void main(String args[])
+{
+Scanner s=new Scanner(System.in);
+System.out.println("Enter username1: ");
+String s1=s.nextLine();
+System.out.println("Enter username2: ");
+String s2=s.nextLine();
+if(s1.equals(s2))
+{
+System.out.println("Username Valid");
+}
+else
+{
+System.out.println("Username Invalid");
+}
+}
+}
